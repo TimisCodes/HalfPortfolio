@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body{
+                background-image: url(./image3.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                min-height: 95vh;
+                scroll-behavior: smooth;
+            }
+         
+            /*.nav-bar{
+                width: 100%;
+                height: 100px;
+                background-color: white;
+                box-shadow: 0px 0px 10px 0px;
+                position: fixed;
+            } */
+          
+            .logo > p{
+                font-size: 30px;
+                margin-top: 10px;
+                position: absolute;
+                margin-left: 10px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                margin: 0px 0px 0px 50%;
+            }
+            ul a{
+                padding: 20px 25px 0px 0px;
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                text-align: center;
+            }
+            ul a:hover{
+                color: blue;
+                text-align: center;
+
+            }
+            div img{
+                width: 100px;
+                height: 50px;
+                position: relative;
+                top: 20px;
+                margin-left: 15px;
+            }
+            button{
+                background-color: transparent;
+                width: 150px;
+                height: 40px;
+                border: 2px solid white;     
+                color: white;
+                position: absolute;
+                top: 450px;
+                margin-left: 45%;
+
+            }
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+            
+            @media (max-width: 600px)
+            {
+                .service{
+                 margin-left: 150px;
+                }
+            }
+            @media (max-width: 600px){
+
+                /*make correction for opacity here */
+                ul a{
+                    opacity: 0;
+                }
+                .logo > p{
+                    text-align: justify;
+                    margin-left: 35%;
+                }
+            }
+            @media (max-width: 430px){
+                button{
+                    top: 600px;
+                    margin-left: 35%;
+                }
+            }
+            .white-box{
+                width: 100%;
+                display: fixed;
+                height: 900px;
+                background-color: white;
+                position: absolute;
+                top: 90%;
+                scroll-behavior: smooth;
+                color: black;
+            }
+           
+            .card{
+                width: 50%;
+            }
+            .left{
+                float: left;
+            }
+            .right{
+                float: right;
+            }
+            .move{
+                position: relative;
+                padding: 50px 0px 0px 0px;
+                top: 40px;
+            }
+            .move1{
+                position: relative;
+                padding: 50px 0px 0px 0px;
+                top: 40px;
+            }
+            .tile-image{
+                position: relative;
+                height: 200px;
+                width: 300px;
+                float: left;
+                margin-right: 50px;
+                top: 50px;
+            }
+            .card{
+                width: 50%;
+            }
+            .left{
+                float: left;
+            }
+            .right{
+                float: right;
+            }
+            .move{
+                position: relative;
+                padding: 50px 0px 0px 0px;
+                top: 40px;
+            }
+            .move1{
+                position: relative;
+                padding: 50px 0px 0px 0px;
+                top: 40px;
+            }
+            @media (max-width: 680px){
+                .card{
+                    width: 80%;
+                    text-align: justify;
+                    display: block;
+                    margin: 30px;
+                    text-align: center;
+                }
+                div .left{
+                    position: relative;
+                    margin-left: 75px;
+                }
+                .move{
+                    max-width: 85%;
+                }
+                div .right{
+                    position: relative;
+                    margin-right: 24px;
+                }
+                .card img{
+                    display: inline;
+                    width:  80%;
+                    object-fit: cover;
+                }
+               h1{
+                    position: relative;
+                    top: 40px;
+                    margin-left: 14px;
+                }
+                p{
+                    position: relative;
+                    top: 40px;
+                    margin-left: 14px;
+                }
+                .move1{
+                    position: relative;
+                    margin-right: 54px;
+                }
+            }
+
+           
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <div class="logo"><p>TimisCode</p></a>
+            <ul>
+                
+                <a href="#white-box">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Plans</a>
+                <a href="#">News & Updates</a>
+                <a href="#">Contact</a>
+            </ul>
+        </div>
+        <div class="background-image">
+
+        <div class="started">
+
+            <button onclick="myFunction()">Get started</button>
+
+        </div>
+        </div>
+
+        <section id="white-box">
+
+        <div class="white-box">
+
+           
+                <div class="left card"><img class="tile-image" src="image4.jpg">
+                    <div class="move">
+                <h1 class="card-title">Portfolio</h1>
+                <p class="card-text">Built by myself a devloping developer, I ensure the most rigourous and modern websites. Built from
+                    scratch using HTML and CSS. Only the best for you.</p>
+        </div></div>
+        
+                <div class="right card"><img class="tile-image" src="image3.jpg">
+                    <div class="move1">
+                    <h1 class="card-title">Technology</h1>
+                <p class="card-text">Technology is the use of scientific knowledge for 
+                    practical purposes or applications, whether in industry or in our everyday lives
+                </p>
+            </div>
+
+        
+
+        </div>
+    </section>
+        </body>
+        
+    </body>
+</html>
